@@ -137,9 +137,9 @@ export default function App() {
             루담 스튜디오는 제안, 피드백, 비즈니스 협업, 제휴 문의 등 어떤 이야기든 진심으로 환영합니다. 
             따뜻하고 즐거운 프로젝트를 함께 만들어가요!
           </p>
-          <a href="mailto:hello@letpang.com" className="email-btn" id="btn-email-mailto">
+          <a href="mailto:studio.ludam@gmail.com" className="email-btn" id="btn-email-mailto">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            hello@letpang.com 문의하기
+            studio.ludam@gmail.com 문의하기
           </a>
         </div>
       </section>
@@ -206,7 +206,7 @@ export default function App() {
                   
                   <h3>4. 개인정보 보호책임자 및 문의</h3>
                   <p>회사의 서비스를 이용하시며 발생하는 모든 개인정보 관련 문의는 아래 이메일로 연락해 주시면 신속하게 조치하겠습니다.</p>
-                  <p>이메일: <a href="mailto:hello@letpang.com" style={{ color: '#7c3aed' }}>hello@letpang.com</a></p>
+                  <p>이메일: <a href="mailto:studio.ludam@gmail.com" style={{ color: '#7c3aed' }}>studio.ludam@gmail.com</a></p>
                 </>
               ) : (
                 <>
