@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <div className="app-container">
-      {/* Background Glowing Orbs */}
+      {/* Background Glowing Orbs (Soft pastel gradients for bright mode) */}
       <div className="glow-orb-container">
         <div className="glow-orb orb-1"></div>
         <div className="glow-orb orb-2"></div>
@@ -27,10 +27,10 @@ export default function App() {
       <header className="header">
         <div className="nav-container">
           <a href="#" className="logo" id="nav-logo">
-            LUDAM<span></span>
+            LUDAM STUDIO<span></span>
           </a>
           <ul className="nav-links">
-            <li><a href="#games" className="nav-link" id="nav-games">Games</a></li>
+            <li><a href="#game" className="nav-link" id="nav-game">Game</a></li>
             <li><a href="#values" className="nav-link" id="nav-values">Values</a></li>
             <li><a href="#contact" className="nav-link" id="nav-contact">Contact</a></li>
           </ul>
@@ -45,35 +45,36 @@ export default function App() {
           <span>Playful Stories</span>
         </h1>
         <p className="hero-subtitle">
-          루담 스튜디오는 일상 속 작은 즐거움을 선사하는 감성적인 캐주얼 모바일 게임을 만듭니다. 
+          루담 스튜디오(Ludam Studio)는 일상 속 작은 즐거움을 선사하는 감성적인 캐주얼 모바일 게임을 만듭니다. 
           반짝이는 아이디어와 따뜻한 디자인으로 누구나 쉽게 즐길 수 있는 특별한 경험을 선물합니다.
         </p>
         <div className="hero-buttons">
-          <a href="#games" className="btn btn-primary" id="btn-explore">
-            신작 보러 가기
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <a href="#game" className="btn btn-primary" id="btn-explore">
+            대표작 보러 가기
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
           <a href="#contact" className="btn btn-secondary" id="btn-contact-hero">스튜디오 문의</a>
         </div>
       </section>
 
-      {/* Showcase / Games Section */}
-      <section className="section" id="games">
+      {/* Showcase / Primary Game Section */}
+      <section className="section" id="game" style={{ borderTop: '1px solid #e2e8f0' }}>
         <div className="section-header">
-          <span className="section-label">Portfolio</span>
-          <h2 className="section-title">Our Games</h2>
+          <span className="section-label">Our Flagship Game</span>
+          <h2 className="section-title">Introducing Hangul Pop</h2>
         </div>
 
         <div className="games-grid">
           {/* Flagship Game: 한글팝 */}
           <div className="game-card">
             <div className="game-info">
-              <span className="game-badge">Flagship Game</span>
+              <span className="game-badge">Featured Game</span>
               <h3 className="game-title">한글팝 (Hangul Pop)</h3>
               <p className="game-desc">
-                쏘고 맞추며 직관적으로 배우는 유쾌한 한글 학습 게임! 
+                쏘고 맞추며 직관적으로 배우는 유쾌하고 감각적인 한글 학습 게임! <br />
                 말랑말랑한 클레이모픽 그래픽의 귀여운 캐릭터들과 함께 재미있는 두뇌 플레이를 즐겨보세요. 
-                매치 게임, 슈팅 게임, 문장 만들기 등 다양한 플레이 모드로 전 세계 누구든 한글과 사랑에 빠지게 만듭니다.
+                매치 게임, 슈팅 게임, 플래시 카드, 문장 만들기 등 다채롭고 교육적인 게임 모드가 준비되어 있어, 
+                남녀노소 전 세계 누구나 한글을 쉽고 재미있게 마스터할 수 있습니다.
               </p>
               <div className="store-badges">
                 <a href="https://play.google.com" className="store-btn" target="_blank" rel="noopener noreferrer" id="btn-playstore-hangul">
@@ -93,53 +94,10 @@ export default function App() {
             </div>
           </div>
         </div>
-
-        {/* Secondary Games Section */}
-        <div className="games-subgrid">
-          {/* Game 2: 오셀로 Pastel Reversi */}
-          <div className="game-card-sm">
-            <div>
-              <span className="game-badge" style={{ background: 'linear-gradient(90deg, #ec4899, #3b82f6)' }}>Board Game</span>
-              <h3 className="game-title" style={{ marginTop: '0.5rem' }}>오셀로: Pastel Reversi</h3>
-              <p className="game-desc">
-                핑크와 하늘색의 사랑스러운 돌로 즐기는 아기자기한 오셀로. 
-                깔끔하고 부드러운 파스텔 테마와 스마트한 AI 대전을 지원하여, 누구나 편안하게 즐길 수 있는 리버시 게임입니다.
-              </p>
-            </div>
-            <div className="store-badges">
-              <a href="https://play.google.com" className="store-btn" target="_blank" rel="noopener noreferrer" id="btn-playstore-othello">
-                Google Play
-              </a>
-              <a href="https://apps.apple.com" className="store-btn" target="_blank" rel="noopener noreferrer" id="btn-appstore-othello">
-                App Store
-              </a>
-            </div>
-          </div>
-
-          {/* Game 3: 색감 능력 테스트 */}
-          <div className="game-card-sm">
-            <div>
-              <span className="game-badge" style={{ background: 'linear-gradient(90deg, #10b981, #14b8a6)' }}>Chroma Training</span>
-              <h3 className="game-title" style={{ marginTop: '0.5rem' }}>색감 능력 테스트</h3>
-              <p className="game-desc">
-                나의 눈은 얼마나 정확할까? 수많은 타일 중 미세하게 다른 색상의 타일을 찾아내는 컬러 감각 서바이벌 게임. 
-                단계가 올라갈수록 펼쳐지는 짜릿한 색채 트레이닝을 경험해보세요.
-              </p>
-            </div>
-            <div className="store-badges">
-              <a href="https://play.google.com" className="store-btn" target="_blank" rel="noopener noreferrer" id="btn-playstore-chroma">
-                Google Play
-              </a>
-              <a href="https://apps.apple.com" className="store-btn" target="_blank" rel="noopener noreferrer" id="btn-appstore-chroma">
-                App Store
-              </a>
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Core Values Section */}
-      <section className="section" id="values" style={{ borderTop: '1px solid var(--card-border)' }}>
+      <section className="section" id="values" style={{ borderTop: '1px solid #e2e8f0' }}>
         <div className="section-header">
           <span className="section-label">Core Philosophy</span>
           <h2 className="section-title">What We Believe</h2>
@@ -150,22 +108,22 @@ export default function App() {
             <div className="value-icon">🎮</div>
             <h3 className="value-title">Play-to-Learn</h3>
             <p className="value-desc">
-              단순히 머리로 외우는 것은 금방 잊힙니다. 
-              우리는 직접 조작하고, 도전하고, 성취하는 '놀이'의 과정을 통해 지식이 자연스럽게 뇌리에 스며드는 게임을 지향합니다.
+              단순히 지식을 주입하고 외우는 것은 재미가 없습니다. 
+              우리는 직접 쏘고 맞추는 흥미진진한 플레이를 통해, 지식이 머릿속에 자연스럽고 즐겁게 새겨지는 게임을 지향합니다.
             </p>
           </div>
           <div className="value-card">
             <div className="value-icon">🎨</div>
             <h3 className="value-title">Warm Aesthetics</h3>
             <p className="value-desc">
-              말랑말랑한 클레이모픽 캐릭터와 은은한 파스텔 파레트를 활용하여 눈이 피로하지 않고 마음이 따뜻해지는 감성적인 비주얼을 설계합니다.
+              말랑말랑하고 귀여운 클레이모픽 3D 스타일과 화사하고 부드러운 파스텔톤 컬러웨이를 적용하여, 누구나 편안하고 눈이 즐겁게 몰입할 수 있도록 돕습니다.
             </p>
           </div>
           <div className="value-card">
             <div className="value-icon">🌍</div>
             <h3 className="value-title">Global First</h3>
             <p className="value-desc">
-              언어와 문화의 장벽 없이 전 세계 누구나 차별 없이 직관적으로 배울 수 있도록 심플하고 직관적인 인터랙션 디자인을 연구합니다.
+              언어 장벽과 배경 지식에 구애받지 않도록 직관적인 튜토리얼과 다국어 완벽 로컬라이징(영어, 일본어, 베트남어, 스페인어)을 지원해 전 세계 누구나 편하게 접근할 수 있도록 만듭니다.
             </p>
           </div>
         </div>
@@ -177,7 +135,7 @@ export default function App() {
           <h2 className="contact-title">Let's Create<br />Something Special</h2>
           <p className="contact-desc">
             루담 스튜디오는 제안, 피드백, 비즈니스 협업, 제휴 문의 등 어떤 이야기든 진심으로 환영합니다. 
-            따뜻하고 멋진 프로젝트를 함께 만들어가요!
+            따뜻하고 즐거운 프로젝트를 함께 만들어가요!
           </p>
           <a href="mailto:hello@letpang.com" className="email-btn" id="btn-email-mailto">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -191,16 +149,16 @@ export default function App() {
         <div className="footer-container">
           <div className="footer-brand">
             <a href="#" className="footer-logo">
-              LUDAM<span></span>
+              LUDAM STUDIO<span></span>
             </a>
             <p className="footer-desc">
-              루담 스튜디오는 누구나 즐길 수 있는 고품질 캐주얼 학습 게임 및 보드 게임 콘텐츠를 만드는 크리에이티브 인디 스튜디오입니다.
+              루담 스튜디오(Ludam Studio)는 누구나 즐겁게 배울 수 있는 고품질 감성 캐주얼 모바일 게임을 개발하는 크리에이티브 인디 스튜디오입니다.
             </p>
           </div>
           <div className="footer-links-grid">
             <div className="footer-links-col">
               <span className="footer-col-title">바로가기</span>
-              <a href="#games" className="footer-link">Games</a>
+              <a href="#game" className="footer-link">Game</a>
               <a href="#values" className="footer-link">Values</a>
               <a href="#contact" className="footer-link">Contact</a>
             </div>
@@ -216,7 +174,7 @@ export default function App() {
         </div>
       </footer>
 
-      {/* Legal Modals */}
+      {/* Legal Modals (Ludam Studio Terms Template) */}
       {activeModal && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -230,7 +188,7 @@ export default function App() {
               {activeModal === 'privacy' ? (
                 <>
                   <p><strong>시행일자: 2026년 5월 17일</strong></p>
-                  <p>루담 스튜디오(이하 '회사')는 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관계 법령을 준수하며, 이용자의 개인정보를 보호하기 위해 최선을 다하고 있습니다.</p>
+                  <p>루담 스튜디오(Ludam Studio, 이하 '회사')는 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관계 법령을 준수하며, 이용자의 개인정보를 보호하기 위해 최선을 다하고 있습니다.</p>
                   
                   <h3>1. 수집하는 개인정보 항목</h3>
                   <p>회사는 모바일 앱 서비스를 제공하기 위해 필요한 최소한의 정보만을 수집하며, 이용자의 사전 동의 없이 민감한 개인정보를 수집하지 않습니다. 회사는 서비스 개선 및 분석을 위해 구글 Firebase, Unity Analytics 등 서드파티 분석 툴을 이용할 수 있으며, 이 과정에서 광고 식별자(ADID/IDFA) 등 비식별 행동 데이터가 자동으로 수집될 수 있습니다.</p>
@@ -248,14 +206,14 @@ export default function App() {
                   
                   <h3>4. 개인정보 보호책임자 및 문의</h3>
                   <p>회사의 서비스를 이용하시며 발생하는 모든 개인정보 관련 문의는 아래 이메일로 연락해 주시면 신속하게 조치하겠습니다.</p>
-                  <p>이메일: <a href="mailto:hello@letpang.com" style={{ color: 'hsl(var(--primary))' }}>hello@letpang.com</a></p>
+                  <p>이메일: <a href="mailto:hello@letpang.com" style={{ color: '#7c3aed' }}>hello@letpang.com</a></p>
                 </>
               ) : (
                 <>
                   <p><strong>시행일자: 2026년 5월 17일</strong></p>
                   
                   <h3>제1조 (목적)</h3>
-                  <p>본 약관은 루담 스튜디오(이하 '회사')가 제공하는 모든 모바일 어플리케이션 및 관련 서비스(이하 '서비스')의 이용 조건 및 절차에 관한 기본적인 사항을 규정함을 목적으로 합니다.</p>
+                  <p>본 약관은 루담 스튜디오(Ludam Studio, 이하 '회사')가 제공하는 모든 모바일 어플리케이션 및 관련 서비스(이하 '서비스')의 이용 조건 및 절차에 관한 기본적인 사항을 규정함을 목적으로 합니다.</p>
                   
                   <h3>제2조 (약관의 효력 및 변경)</h3>
                   <p>회사는 합리적인 사유가 발생할 경우 관련 법령을 위배하지 않는 범위 내에서 본 약관을 개정할 수 있습니다. 개정된 약관은 앱 내부 화면 또는 공식 웹사이트를 통해 공지함으로써 효력이 발생합니다.</p>
