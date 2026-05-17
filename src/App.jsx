@@ -87,12 +87,10 @@ export default function App() {
                 </a>
               </div>
             </div>
-            <div className="game-visual" style={{ background: 'none', border: 'none', boxShadow: 'none' }}>
-              <img 
-                src="/hangul_pop_mockup.png" 
-                alt="Hangul Pop Game Showcase" 
-                style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '24px' }} 
-              />
+            <div className="game-visual">
+              <div className="visual-clay"></div>
+              <div className="visual-clay-sub"></div>
+              <div className="visual-title-overlay">Hangul Pop 🎈</div>
             </div>
           </div>
         </div>
