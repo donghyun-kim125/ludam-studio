@@ -39,42 +39,42 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="hero">
-        <span className="hero-tag">Indie Game Studio</span>
+        <span className="hero-tag">Play, Learn, and Discover</span>
         <h1 className="hero-title">
-          We Craft<br />
-          <span>Playful Stories</span>
+          Shaping Delightful<br />
+          <span>Discoveries</span>
         </h1>
         <p className="hero-subtitle">
-          루담 스튜디오(Ludam Studio)는 일상 속 작은 즐거움을 선사하는 감성적인 캐주얼 모바일 게임을 만듭니다. 
-          반짝이는 아이디어와 따뜻한 디자인으로 누구나 쉽게 즐길 수 있는 특별한 경험을 선물합니다.
+          루담 스튜디오(Ludam Studio)는 놀이와 배움의 경계를 감성적으로 허무는 캐주얼 게임 브랜드입니다. 
+          우리는 직관적인 몰입감과 독창적인 따뜻함을 결합하여, 바쁜 현대인의 일상에 잔잔한 미소와 유쾌한 발견을 선물합니다.
         </p>
         <div className="hero-buttons">
           <a href="#game" className="btn btn-primary" id="btn-explore">
-            대표작 보러 가기
+            대표작 만나보기
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
-          <a href="#contact" className="btn btn-secondary" id="btn-contact-hero">스튜디오 문의</a>
+          <a href="#contact" className="btn btn-secondary" id="btn-contact-hero">스튜디오와 대화하기</a>
         </div>
       </section>
 
       {/* Showcase / Primary Game Section */}
       <section className="section" id="game" style={{ borderTop: '1px solid #e2e8f0' }}>
         <div className="section-header">
-          <span className="section-label">Our Flagship Game</span>
-          <h2 className="section-title">Introducing Hangul Pop</h2>
+          <span className="section-label">Our Masterpiece</span>
+          <h2 className="section-title">The Magic of Hangul Pop</h2>
         </div>
 
         <div className="games-grid">
           {/* Flagship Game: 한글팝 */}
           <div className="game-card">
             <div className="game-info">
-              <span className="game-badge">Featured Game</span>
-              <h3 className="game-title">한글팝 (Hangul Pop)</h3>
+              <span className="game-badge">Flagship Game</span>
+              <h3 className="game-title">한글팝 (Hangul Pop) 🎈</h3>
               <p className="game-desc">
-                쏘고 맞추며 직관적으로 배우는 유쾌하고 감각적인 한글 학습 게임! <br />
-                말랑말랑한 클레이모픽 그래픽의 귀여운 캐릭터들과 함께 재미있는 두뇌 플레이를 즐겨보세요. 
-                매치 게임, 슈팅 게임, 플래시 카드, 문장 만들기 등 다채롭고 교육적인 게임 모드가 준비되어 있어, 
-                남녀노소 전 세계 누구나 한글을 쉽고 재미있게 마스터할 수 있습니다.
+                자음과 모음이 살아 움직이는 생동감 넘치는 언어 학습 여정! 
+                한글팝은 쏘고, 터뜨리고, 조립하며 한글을 가장 본능적이고 신나게 익히는 에듀테인먼트 퍼즐 게임입니다. 
+                터치할 때마다 쫀득하게 반응하는 3D 클레이 그래픽과 톡톡 튀는 사운드 효과가 귀와 눈을 사로잡습니다. 
+                매치 게임부터 스피디한 액션 슈팅, 문장 빌더까지 다양하게 구성된 플레이 모드로 전 세계 누구든 한글의 유쾌한 매력에 푹 빠져들게 만듭니다.
               </p>
               <div className="store-badges">
                 <a href="https://play.google.com" className="store-btn" target="_blank" rel="noopener noreferrer" id="btn-playstore-hangul">
@@ -100,30 +100,31 @@ export default function App() {
       <section className="section" id="values" style={{ borderTop: '1px solid #e2e8f0' }}>
         <div className="section-header">
           <span className="section-label">Core Philosophy</span>
-          <h2 className="section-title">What We Believe</h2>
+          <h2 className="section-title">Values We Cherish</h2>
         </div>
 
         <div className="values-grid">
           <div className="value-card">
-            <div className="value-icon">🎮</div>
-            <h3 className="value-title">Play-to-Learn</h3>
+            <div className="value-icon">🧠</div>
+            <h3 className="value-title">Intuitively Smart</h3>
             <p className="value-desc">
-              단순히 지식을 주입하고 외우는 것은 재미가 없습니다. 
-              우리는 직접 쏘고 맞추는 흥미진진한 플레이를 통해, 지식이 머릿속에 자연스럽고 즐겁게 새겨지는 게임을 지향합니다.
+              설명서 없이도 켜자마자 본능적으로 이해되는 스마트한 UX를 고집합니다. 
+              복잡할 수 있는 학습 원리를 자연스러운 드래그와 매칭 룰로 재미있게 녹여내 배움의 문턱을 획기적으로 낮춥니다.
             </p>
           </div>
           <div className="value-card">
-            <div className="value-icon">🎨</div>
-            <h3 className="value-title">Warm Aesthetics</h3>
+            <div className="value-icon">🧸</div>
+            <h3 className="value-title">Claymorphic Heart</h3>
             <p className="value-desc">
-              말랑말랑하고 귀여운 클레이모픽 3D 스타일과 화사하고 부드러운 파스텔톤 컬러웨이를 적용하여, 누구나 편안하고 눈이 즐겁게 몰입할 수 있도록 돕습니다.
+              디지털 화면 너머로 따스한 위안을 전달하고 싶습니다. 만지고 싶을 정도로 폭신한 3D 클레이 스타일 그래픽과 편안한 감성의 컬러 조합으로 모든 플레이 순간에 감성적 힐링을 얹습니다.
             </p>
           </div>
           <div className="value-card">
-            <div className="value-icon">🌍</div>
-            <h3 className="value-title">Global First</h3>
+            <div className="value-icon">🌐</div>
+            <h3 className="value-title">Borderless Joy</h3>
             <p className="value-desc">
-              언어 장벽과 배경 지식에 구애받지 않도록 직관적인 튜토리얼과 다국어 완벽 로컬라이징(영어, 일본어, 베트남어, 스페인어)을 지원해 전 세계 누구나 편하게 접근할 수 있도록 만듭니다.
+              나이와 국경의 장벽 없이 전 세계 누구나 동일한 품질의 기쁨을 느낄 수 있게 만듭니다. 
+              철저한 다국어 현지화와 유니버설 기획을 바탕으로, 글로벌 마켓의 소통과 배움의 통로가 되고자 합니다.
             </p>
           </div>
         </div>
@@ -132,10 +133,10 @@ export default function App() {
       {/* Contact Section */}
       <section className="section contact-section" id="contact">
         <div className="contact-card">
-          <h2 className="contact-title">Let's Create<br />Something Special</h2>
+          <h2 className="contact-title">Connect with<br />Ludam Studio</h2>
           <p className="contact-desc">
-            루담 스튜디오는 제안, 피드백, 비즈니스 협업, 제휴 문의 등 어떤 이야기든 진심으로 환영합니다. 
-            따뜻하고 즐거운 프로젝트를 함께 만들어가요!
+            비즈니스 제휴, 아이디어 협업 제안, 혹은 게임 이용 중 느꼈던 따뜻한 의견 공유까지! 
+            루담 스튜디오의 문은 언제나 활짝 열려 있습니다. 우리와 함께 세상을 한 뼘 더 즐겁고 유쾌한 곳으로 만들어가요.
           </p>
           <a href="mailto:studio.ludam@gmail.com" className="email-btn" id="btn-email-mailto">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -152,7 +153,7 @@ export default function App() {
               LUDAM STUDIO<span></span>
             </a>
             <p className="footer-desc">
-              루담 스튜디오(Ludam Studio)는 누구나 즐겁게 배울 수 있는 고품질 감성 캐주얼 모바일 게임을 개발하는 크리에이티브 인디 스튜디오입니다.
+              루담 스튜디오(Ludam Studio)는 일상 속에 영감과 따뜻한 웃음을 채워 넣는 크리에이티브 퍼즐 및 캐주얼 모바일 게임을 디자인하는 독립 게임 스튜디오입니다.
             </p>
           </div>
           <div className="footer-links-grid">
