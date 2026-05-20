@@ -169,6 +169,8 @@ export default function App() {
                 <div className="game-visual">
                   <div className="visual-clay"></div>
                   <div className="visual-clay-sub"></div>
+                  <div className="visual-clay-pink"></div>
+                  <div className="visual-glass-shine"></div>
                   <div className="visual-title-overlay">Hangul Pop 🎈</div>
                 </div>
               </div>
